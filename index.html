@@ -1,0 +1,96 @@
+<!--
+  Photography Portfolio Website
+  This single‑page website provides a dynamic and eye‑catching showcase for a photographer.  
+  Sections include a full‑screen hero slider, a responsive gallery with modal preview, an about area and a contact form.  
+  The page is written in German (de) to match the user’s locale.  
+-->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fotografie‑Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation bar -->
+  <header id="header">
+    <div class="container nav-container">
+      <h1 class="logo">FotoPortfolio</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#gallery">Galerie</a></li>
+          <li><a href="#about">Über&nbsp;mich</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero section with image slider -->
+  <section id="home" class="hero">
+    <div class="slides">
+      <div class="slide active" style="background-image:url('images/hero1.png');"></div>
+      <div class="slide" style="background-image:url('images/hero2.png');"></div>
+      <div class="slide" style="background-image:url('images/hero3.png');"></div>
+      <div class="slide" style="background-image:url('images/hero4.png');"></div>
+    </div>
+    <div class="hero-content">
+      <h2>Momente für die Ewigkeit</h2>
+      <p>Professionelle Fotografie in Zürich</p>
+      <a href="#gallery" class="btn">Portfolio ansehen</a>
+    </div>
+  </section>
+
+  <!-- Gallery section -->
+  <section id="gallery" class="gallery section">
+    <h2 class="section-title">Galerie</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item"><img src="images/hero1.png" alt="Foto 1"></div>
+      <div class="gallery-item"><img src="images/hero2.png" alt="Foto 2"></div>
+      <div class="gallery-item"><img src="images/hero3.png" alt="Foto 3"></div>
+      <div class="gallery-item"><img src="images/hero4.png" alt="Foto 4"></div>
+      <div class="gallery-item"><img src="images/hero1.png" alt="Foto 5"></div>
+      <div class="gallery-item"><img src="images/hero2.png" alt="Foto 6"></div>
+      <div class="gallery-item"><img src="images/hero3.png" alt="Foto 7"></div>
+      <div class="gallery-item"><img src="images/hero4.png" alt="Foto 8"></div>
+    </div>
+  </section>
+
+  <!-- About section -->
+  <section id="about" class="about section">
+    <h2 class="section-title">Über mich</h2>
+    <div class="about-content">
+      <p>Als leidenschaftlicher Fotograf aus Zürich halte ich einzigartige Momente in beeindruckenden Bildern fest. Mit langjähriger Erfahrung und einem kreativen Blick für Details begleite ich Sie bei Hochzeiten, Events, Porträts und Werbeprojekten. Meine Leidenschaft für Fotografie spiegelt sich in jedem Foto wider – ich erzähle Geschichten durch Bilder.</p>
+    </div>
+  </section>
+
+  <!-- Contact section -->
+  <section id="contact" class="contact section">
+    <h2 class="section-title">Kontakt</h2>
+    <div class="contact-content">
+      <p>Sie möchten mehr erfahren oder ein Shooting buchen? Kontaktieren Sie mich gerne!</p>
+      <form id="contactForm" action="#" method="post">
+        <input type="text" name="name" placeholder="Ihr Name" required>
+        <input type="email" name="email" placeholder="Ihre E‑Mail" required>
+        <textarea name="message" placeholder="Ihre Nachricht" rows="5" required></textarea>
+        <button type="submit" class="btn">Nachricht senden</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Fotograf | Alle Rechte vorbehalten.</p>
+  </footer>
+
+  <!-- Image modal for gallery -->
+  <div id="modal" class="modal">
+    <span class="modal-close">&times;</span>
+    <img class="modal-content" id="modalImage" alt="Großes Foto">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
